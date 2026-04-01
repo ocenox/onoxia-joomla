@@ -1,6 +1,6 @@
 # Changelog
 
-## [next] — 2026-04-01
+## 1.2.5 — 2026-04-01
 
 ### Fixed
 - JED compliance: package name changed from `pkg_onoxia` to `ONOXIA` (no type prefix allowed)
