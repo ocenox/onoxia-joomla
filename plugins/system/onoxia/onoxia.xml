@@ -6,7 +6,7 @@
     <authorUrl>https://ocenox.com</authorUrl>
     <copyright>Copyright (C) 2026 OCENOX LTD. All rights reserved.</copyright>
     <license>GPL-2.0-or-later</license>
-    <version>1.2.8</version>
+    <version>1.2.9</version>
     <creationDate>April 2026</creationDate>
     <description>PLG_SYSTEM_ONOXIA_DESC</description>
     <namespace path="src">Ocenox\Plugin\System\Onoxia</namespace>
