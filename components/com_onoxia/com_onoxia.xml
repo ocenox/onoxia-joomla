@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>ONOXIA</name>
+    <author>OCENOX LTD</author>
+    <authorEmail>dev@ocenox.com</authorEmail>
+    <authorUrl>https://ocenox.com</authorUrl>
+    <copyright>Copyright (C) 2026 OCENOX LTD. All rights reserved.</copyright>
+    <license>GPL-2.0-or-later</license>
+    <version>1.2.4</version>
+    <creationDate>April 2026</creationDate>
+    <description>COM_ONOXIA_DESC</description>
+    <namespace path="src">Ocenox\Component\Onoxia</namespace>
+    <administration>
+        <menu img="class:fas fa-robot">COM_ONOXIA</menu>
+        <files folder=".">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <folder>language</folder>
+        </files>
+        <languages>
+            <language tag="en-GB">language/en-GB/com_onoxia.ini</language>
+            <language tag="en-GB">language/en-GB/com_onoxia.sys.ini</language>
+            <language tag="de-DE">language/de-DE/com_onoxia.ini</language>
+            <language tag="de-DE">language/de-DE/com_onoxia.sys.ini</language>
+        </languages>
+    </administration>
+    <updateservers>
+        <server type="extension" name="ONOXIA Updates">https://ocenox.github.io/onoxia-joomla/update.xml</server>
+    </updateservers>
+</extension>

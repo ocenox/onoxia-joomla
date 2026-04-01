@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>System - ONOXIA AI Chatbot</name>
+    <author>OCENOX LTD</author>
+    <authorEmail>dev@ocenox.com</authorEmail>
+    <authorUrl>https://ocenox.com</authorUrl>
+    <copyright>Copyright (C) 2026 OCENOX LTD. All rights reserved.</copyright>
+    <license>GPL-2.0-or-later</license>
+    <version>1.2.4</version>
+    <creationDate>April 2026</creationDate>
+    <description>PLG_SYSTEM_ONOXIA_DESC</description>
+    <namespace path="src">Ocenox\Plugin\System\Onoxia</namespace>
+    <files>
+        <folder plugin="onoxia">services</folder>
+        <folder>src</folder>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_system_onoxia.ini</language>
+        <language tag="en-GB">language/en-GB/plg_system_onoxia.sys.ini</language>
+        <language tag="de-DE">language/de-DE/plg_system_onoxia.ini</language>
+        <language tag="de-DE">language/de-DE/plg_system_onoxia.sys.ini</language>
+        <language tag="fr-FR">language/fr-FR/plg_system_onoxia.ini</language>
+        <language tag="fr-FR">language/fr-FR/plg_system_onoxia.sys.ini</language>
+        <language tag="es-ES">language/es-ES/plg_system_onoxia.ini</language>
+        <language tag="es-ES">language/es-ES/plg_system_onoxia.sys.ini</language>
+        <language tag="it-IT">language/it-IT/plg_system_onoxia.ini</language>
+        <language tag="it-IT">language/it-IT/plg_system_onoxia.sys.ini</language>
+        <language tag="pt-BR">language/pt-BR/plg_system_onoxia.ini</language>
+        <language tag="pt-BR">language/pt-BR/plg_system_onoxia.sys.ini</language>
+        <language tag="nl-NL">language/nl-NL/plg_system_onoxia.ini</language>
+        <language tag="nl-NL">language/nl-NL/plg_system_onoxia.sys.ini</language>
+        <language tag="pl-PL">language/pl-PL/plg_system_onoxia.ini</language>
+        <language tag="pl-PL">language/pl-PL/plg_system_onoxia.sys.ini</language>
+        <language tag="ja-JP">language/ja-JP/plg_system_onoxia.ini</language>
+        <language tag="ja-JP">language/ja-JP/plg_system_onoxia.sys.ini</language>
+        <language tag="ko-KR">language/ko-KR/plg_system_onoxia.ini</language>
+        <language tag="ko-KR">language/ko-KR/plg_system_onoxia.sys.ini</language>
+        <language tag="zh-CN">language/zh-CN/plg_system_onoxia.ini</language>
+        <language tag="zh-CN">language/zh-CN/plg_system_onoxia.sys.ini</language>
+        <language tag="th-TH">language/th-TH/plg_system_onoxia.ini</language>
+        <language tag="th-TH">language/th-TH/plg_system_onoxia.sys.ini</language>
+        <language tag="ms-MY">language/ms-MY/plg_system_onoxia.ini</language>
+        <language tag="ms-MY">language/ms-MY/plg_system_onoxia.sys.ini</language>
+        <language tag="id-ID">language/id-ID/plg_system_onoxia.ini</language>
+        <language tag="id-ID">language/id-ID/plg_system_onoxia.sys.ini</language>
+        <language tag="vi-VN">language/vi-VN/plg_system_onoxia.ini</language>
+        <language tag="vi-VN">language/vi-VN/plg_system_onoxia.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="PLG_SYSTEM_ONOXIA_FIELDSET_BASIC">
+                <field name="api_token" type="text"
+                       label="PLG_SYSTEM_ONOXIA_API_TOKEN"
+                       description="PLG_SYSTEM_ONOXIA_API_TOKEN_DESC"
+                       required="true" />
+                <field name="context_tags" type="text"
+                       label="PLG_SYSTEM_ONOXIA_TAGS"
+                       description="PLG_SYSTEM_ONOXIA_TAGS_DESC" />
+            </fieldset>
+            <fieldset name="sync" label="PLG_SYSTEM_ONOXIA_FIELDSET_SYNC">
+                <field name="sync_articles" type="radio" default="0"
+                       label="PLG_SYSTEM_ONOXIA_SYNC_ARTICLES"
+                       description="PLG_SYSTEM_ONOXIA_SYNC_ARTICLES_DESC"
+                       class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="sync_llms_txt" type="radio" default="0"
+                       label="PLG_SYSTEM_ONOXIA_SYNC_LLMS"
+                       description="PLG_SYSTEM_ONOXIA_SYNC_LLMS_DESC"
+                       class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="sync_sitemap" type="radio" default="0"
+                       label="PLG_SYSTEM_ONOXIA_SYNC_SITEMAP"
+                       description="PLG_SYSTEM_ONOXIA_SYNC_SITEMAP_DESC"
+                       class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            <fieldset name="restrictions" label="PLG_SYSTEM_ONOXIA_FIELDSET_RESTRICTIONS">
+                <field name="enabled_menuitems" type="menuitem"
+                       label="PLG_SYSTEM_ONOXIA_PAGES"
+                       description="PLG_SYSTEM_ONOXIA_PAGES_DESC"
+                       multiple="true" />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" name="ONOXIA Updates">https://ocenox.github.io/onoxia-joomla/update.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" method="upgrade">
+    <name>ONOXIA</name>
+    <packagename>onoxia</packagename>
+    <author>OCENOX LTD</author>
+    <authorEmail>dev@ocenox.com</authorEmail>
+    <authorUrl>https://ocenox.com</authorUrl>
+    <copyright>Copyright (C) 2026 OCENOX LTD. All rights reserved.</copyright>
+    <license>GPL-2.0-or-later</license>
+    <version>1.2.4</version>
+    <creationDate>April 2026</creationDate>
+    <description>PKG_ONOXIA_DESC</description>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/onoxia.sys.ini</language>
+        <language tag="de-DE">de-DE/onoxia.sys.ini</language>
+        <language tag="es-ES">es-ES/onoxia.sys.ini</language>
+        <language tag="fr-FR">fr-FR/onoxia.sys.ini</language>
+        <language tag="id-ID">id-ID/onoxia.sys.ini</language>
+        <language tag="it-IT">it-IT/onoxia.sys.ini</language>
+        <language tag="ja-JP">ja-JP/onoxia.sys.ini</language>
+        <language tag="ko-KR">ko-KR/onoxia.sys.ini</language>
+        <language tag="ms-MY">ms-MY/onoxia.sys.ini</language>
+        <language tag="nl-NL">nl-NL/onoxia.sys.ini</language>
+        <language tag="pl-PL">pl-PL/onoxia.sys.ini</language>
+        <language tag="pt-BR">pt-BR/onoxia.sys.ini</language>
+        <language tag="th-TH">th-TH/onoxia.sys.ini</language>
+        <language tag="vi-VN">vi-VN/onoxia.sys.ini</language>
+        <language tag="zh-CN">zh-CN/onoxia.sys.ini</language>
+    </languages>
+    <files>
+        <file type="plugin" group="system" id="onoxia">plg_system_onoxia.zip</file>
+        <file type="component" id="com_onoxia">com_onoxia.zip</file>
+    </files>
+    <updateservers>
+        <server type="extension" name="ONOXIA Updates">https://ocenox.github.io/onoxia-joomla/update.xml</server>
+    </updateservers>
+</extension>

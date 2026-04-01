@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>ONOXIA AI Chatbot for Joomla</name>
+        <description>ONOXIA AI Chatbot — Widget injection, RAG knowledge sync, and admin dashboard.</description>
+        <element>pkg_onoxia</element>
+        <type>package</type>
+        <version>{{VERSION}}</version>
+        <client>site</client>
+        <infourl title="ONOXIA">https://onoxia.nz</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/ocenox/onoxia-joomla/releases/download/v{{VERSION}}/pkg_onoxia-{{VERSION}}.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" version="5\.\d+" />
+        <php_minimum>8.1</php_minimum>
+        <maintainer>OCENOX LTD</maintainer>
+        <maintainerurl>https://ocenox.com</maintainerurl>
+    </update>
+</updates>
